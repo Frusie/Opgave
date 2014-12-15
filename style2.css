@@ -1,0 +1,35 @@
+#header {
+width: 920px;
+height: 160px;
+background-color: #6424CC;
+text-align: center;
+padding: 20px;
+font-family: Arial;
+font-size: 30;}
+
+#menu {float: left;
+width: 160px;
+height: 660px;
+background-color: #B588FF;
+padding: 20px;
+font-family: Arial;}
+
+#content {
+float: left;
+width: 720px;
+height: 660px;
+padding: 20px;
+background-color: #B5B5BA;
+font-family: Arial;}
+
+#footer {clear: both;
+width: 920px;
+height: 10px;
+background-color: #6424CC;
+padding: 20px;
+text-align: center;
+font-family: Arial;}
+
+#wrapper {margin-right: auto;
+margin-left: auto;
+width: 960px}
