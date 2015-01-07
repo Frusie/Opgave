@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+
+<style type="text/css">
+
+/*horisontal menu style*/	
+nav {
+	background: #916A31;
+	height: 2.3em;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+ul {
+	background: #D5973C;
+	height: 2em;
+	width: 100%;
+}
+li {
+	position: relative;
+	margin-right: 2em;
+	margin-left: 1em;
+}
+li a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em 0 2em;
+	color: white;
+	text-decoration: none;
+ 
+}
+li a:hover, .topmenu li:hover > a {
+ 
+	height: 2em;
+	padding-top: .3em;
+	position: relative;
+	top: -.3em;
+	border-radius: .3em .3em 0 0;
+}
+.current a, .current a:hover, .topmenu li.current:hover a {
+ 
+	color: #eee;
+	padding-top: .3em;
+	border-radius: .3em .3em 0 0;
+	position: relative;
+	top: -.3em;
+	border-bottom: .3em solid #917F63;
+	cursor: default;
+}
+ 
+/*dropdown/vartikal menu style - læg mærke til:; position absolute og left -9000em sender menu en ud af browser vinduet*/
+ul.submenu {
+	float: none;
+	background: #916A31;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 2em;
+    left: -9000em;
+	max-height: 0;
+	-moz-transition:max-height 0.5s ease-in-out;
+	-webkit-transition:max-height 0.5s ease-in-out;
+	-o-transition:max-height 0.5s ease-in-out;
+	transition:max-height 0.5s ease-in-out;
+	overflow: hidden;
+}
+ 
+/*her none float på submenu - den er jo child af topmenu derfor skal float fjernes*/
+ul.submenu li {
+	float: none;
+	margin: 0;
+}
+ 
+/*ved hover på topmenu punktet sættes left til 0 og submenuen kommer ind på scenen*/
+.topmenu li:hover ul {
+	left: 20px;
+	max-height: 10em;
+}
+ 
+ul.submenu li a {
+	border-bottom: 1px solid white;
+	padding: .2em 1em;
+	white-space: nowrap;
+	background: #916A31;
+}
+ 
+/*pseudo selector fjerne border på sidste child*/
+ul.submenu li:last-child a {
+	border-bottom: none;
+}
+ul.submenu li a:hover {
+	background: #D5973C;
+	height: 2em;
+	padding-top: .2em;
+	top: 0;
+	border-radius: 0;
+}
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+
+
+<nav class="cf">
+    <ul class="topmenu">
+      <li><a href="#">Forside</a>
+      	<ul class="submenu">
+          <li><a href="#">Æbler</a></li>
+          <li><a href="#">Pærer</a </li>
+          <li><a href="#">Blommer</a></li>
+          <li><a href="#">Bær</a></li>
+        </ul>
+
+      </li>
+      <li><a href="#">Produkter</a>
+        <ul class="submenu">
+          <li><a href="#">Æbler</a></li>
+          <li><a href="#">Pærer</a </li>
+          <li><a href="#">Blommer</a></li>
+          <li><a href="#">Bær</a></li>
+        </ul>
+      </li> <!--Obs! Her sluttes listepunktet "Produkter"-->
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
