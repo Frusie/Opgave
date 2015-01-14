@@ -1,14 +1,112 @@
 <html>
 <head>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<title></title>
 
 	<meta charset="utf-8">
 
 <style type="text/css">
 
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?gwcbms');
+	src:url('fonts/icomoon.eot?#iefixgwcbms') format('embedded-opentype'),
+		url('fonts/icomoon.woff?gwcbms') format('woff'),
+		url('fonts/icomoon.ttf?gwcbms') format('truetype'),
+		url('fonts/icomoon.svg?gwcbms#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	padding-right: 5px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e900";
+}
+
+.icon-music:before {
+	content: "\e911";
+}
+
+.icon-play:before {
+	content: "\e912";
+}
+
+.icon-books:before {
+	content: "\e920";
+}
+
+.icon-price-tags:before {
+	content: "\e936";
+}
+
+.icon-phone:before {
+	content: "\e942";
+}
+
+.icon-envelop:before {
+	content: "\e945";
+}
+
+.icon-pushpin:before {
+	content: "\e946";
+}
+
+.icon-compass:before {
+	content: "\e949";
+}
+
+.icon-leaf:before {
+	content: "\e9a4";
+}
+
+.icon-enter:before {
+	content: "\ea13";
+}
+
+.icon-mail2:before {
+	content: "\ea84";
+}
+
+.icon-google-plus2:before {
+	content: "\ea89";
+}
+
+.icon-facebook2:before {
+	content: "\ea8d";
+	color: #3a5795
+}
+
+.icon-youtube3:before {
+	content: "\ea99";
+}
+
+
+
+
+
+
+
 /*horisontal menu style*/	
+*{font-family: 'Bree Serif', serif;}
+
+
 nav {
-	background: #916A31;
+	background: #002D40;
 	height: 2.3em;
 }
 ul, li {
@@ -18,7 +116,7 @@ ul, li {
 	float: left;
 }
 ul {
-	background: #D5973C;
+	background: #0086BF;
 	height: 2em;
 	width: 100%;
 }
@@ -57,7 +155,7 @@ li a:hover, .topmenu li:hover > a {
 /*dropdown/vartikal menu style - læg mærke til:; position absolute og left -9000em sender menu en ud af browser vinduet*/
 ul.submenu {
 	float: none;
-	background: #916A31;
+	background: #0086BF;
 	width: auto;
 	height: auto;
 	position: absolute;
@@ -87,7 +185,8 @@ ul.submenu li a {
 	border-bottom: 1px solid white;
 	padding: .2em 1em;
 	white-space: nowrap;
-	background: #916A31;
+	background: #002D40;
+	color: white;
 }
  
 /*pseudo selector fjerne border på sidste child*/
@@ -95,14 +194,15 @@ ul.submenu li:last-child a {
 	border-bottom: none;
 }
 ul.submenu li a:hover {
-	background: #D5973C;
+	background: #0086BF;
+	color: white ;
 	height: 2em;
 	padding-top: .2em;
 	top: 0;
 	border-radius: 0;
 }
 
-
+.stortekst {font-size: 20px}
 
 </style>
 
@@ -117,7 +217,7 @@ ul.submenu li a:hover {
 
 <nav class="cf">
     <ul class="topmenu">
-      <li><a href="#">Forside</a>
+      <li><a href="#"><span class="icon-home"></span>Forside</a>
       	<ul class="submenu">
           <li><a href="#">Æbler</a></li>
           <li><a href="#">Pærer</a </li>
@@ -126,7 +226,7 @@ ul.submenu li a:hover {
         </ul>
 
       </li>
-      <li><a href="#">Produkter</a>
+      <li><a href="#"><span class="icon-leaf"></span>Produkter</a>
         <ul class="submenu">
           <li><a href="#">Æbler</a></li>
           <li><a href="#">Pærer</a </li>
@@ -140,7 +240,7 @@ ul.submenu li a:hover {
 
 
 
-
+<span class="icon-facebook2 stortekst"></span>
 
 
 
